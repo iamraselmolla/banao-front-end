@@ -1,5 +1,5 @@
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .App-logo {
@@ -27,7 +27,6 @@ section {
   }
 }
 
-
 .border-bottom-none {
   border-bottom: none !important;
 }
@@ -42,12 +41,10 @@ section {
 
 .register-user-form .form-control:focus {
   box-shadow: 0 0 0 2px rgb(13 110 253 / 25%) !important;
-
 }
 
 .register-user-form .form-control {
-  background-color: #F7F8FA;
-
+  background-color: #f7f8fa;
 }
 
 .App-link {
@@ -76,7 +73,6 @@ section {
 
 /* Modal Content/Box */
 
-
 /* The Close Button */
 .close {
   color: #aaa;
@@ -101,10 +97,9 @@ section {
   cursor: pointer;
 }
 
-
 /* Post btn */
 .post-btn {
-  background: #FF5C5C;
+  background: #ff5c5c;
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -115,11 +110,28 @@ section {
   bottom: 10px;
   right: 10px;
 }
-.search-input{
-  width: 300px!important;
+.search-input {
+  width: 300px !important;
 }
-.search-input:focus{
-  box-shadow: none!important;
+.search-input:focus {
+  box-shadow: none !important;
   outline: none;
   border: none;
+}
+
+/* Modal CSS */
+#myModal {
+  width: 60%;
+}
+.closeModalButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  /* position: relative; */
+  right: 0;
+  margin-top: -31px;
+  margin-right: -56px;
+  margin-left: 99%;
 }
