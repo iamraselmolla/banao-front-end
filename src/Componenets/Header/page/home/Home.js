@@ -6,6 +6,7 @@ import Article from '../../../shared/HomeContent/Article';
 import Meet from '../../../shared/HomeContent/Meet';
 import Job from '../../../shared/HomeContent/Job';
 import Education from '../../../shared/HomeContent/Education';
+import { FaPencilAlt } from 'react-icons/fa'
 
 const Home = () => {
 
@@ -46,6 +47,10 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <div className="postBtnForAndorid bg-danger  d-block d-sm-block d-md-block d-xl-none d-inline-block text-white">
+                <FaPencilAlt />
+            </div>
+
             <section>
                 <div className="container">
                     <div className="row">

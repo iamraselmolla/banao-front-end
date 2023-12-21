@@ -8,7 +8,7 @@ body {
 }
 
 section {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -129,9 +129,32 @@ section {
   border-radius: 50%;
   line-height: 30px;
   text-align: center;
-  /* position: relative; */
-  right: 0;
-  margin-top: -31px;
-  margin-right: -56px;
-  margin-left: 99%;
+  right: -25px;
+  top: -35px;
+  z-index: 10000;
+  background-color: #fff;
+}
+
+/* CSS for Post btn in Android Display */
+.postBtnForAndorid {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  line-height: 54px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .closeModalButton {
+    right: 30px;
+    top: 6%;
+    background: #000;
+    color: #fff;
+  }
+  .modal-dialog {
+    margin: 0 !important;
+  }
 }

@@ -6,7 +6,7 @@ const SignInUser = ({ showRegister, setShowRegister }) => {
     return (
         <div className="signin-user pb-2 px-4 pt-4">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 col-sm-12 col-xl-6">
                     <div className="form-part">
                         <h3 className="fw-bold mb-3">Sign in</h3>
                         <div className="register-user-form">
@@ -36,7 +36,7 @@ const SignInUser = ({ showRegister, setShowRegister }) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-6 d-flex  align-items-center flex-column text-center">
+                <div className="col-md-6 d-none d-sm-none d-md-block d-flex  align-items-center flex-column text-center">
                     <p className="mb-0 text-end">Didn't have an account yet? <span onClick={() => setShowRegister(!showRegister)} className="text-primary fw-bold" style={{ cursor: 'pointer' }}>Create new for free</span></p>
                     <img src="register.png" className="img-fluid" alt="Register user" />
 

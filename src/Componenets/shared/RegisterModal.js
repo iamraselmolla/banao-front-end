@@ -19,20 +19,22 @@ function RegisterModal(props) {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-                <div onClick={props.onHide} className='closeModalButton bg-light ' style={{ cursor: 'pointer' }}>
+                <div onClick={props.onHide} className='closeModalButton position-absolute ' style={{ cursor: 'pointer' }}>
                     X
                 </div>
-                <div className='bg-success py-3 bg-opacity-25'>
+
+                <div className='bg-success d-none d-sm-none d-md-block py-3 bg-opacity-25'>
                     <p className="mb-0 text-success fw-bold text-center px-3 py-2">Let's learn, share inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
                 </div>
 
                 <Modal.Body>
                     {showRegister ? <>
-                        <div className="register-user pb-2 px-4 pt-4">
+                        <div className="register-user position-relative  pb-2 px-4 pt-4">
                             <div className="row">
-                                <div className="col-md-6">
+                                <div className="col-md-6 col-sm-12 col-xl-6">
                                     <div className="form-part">
                                         <h3 className="fw-bold mb-3">Create Account</h3>
+
                                         <div className="register-user-form">
                                             <form>
                                                 <div className="row">
@@ -67,7 +69,7 @@ function RegisterModal(props) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6 d-flex  align-items-center flex-column text-center">
+                                <div className="col-md-6 d-none d-sm-none d-md-block d-xl-block d-flex  align-items-center flex-column text-center">
                                     <p className="mb-0 text-end">Already have an account? <span onClick={handleSignInModal} className="text-primary fw-bold" style={{ cursor: 'pointer' }}>Sign In</span></p>
                                     <img src="register.png" className="img-fluid" alt="Register user" />
                                     <p className="mt-4 text-muted">By signing up, you agree to our Terms &amp; conditions, Privacy policy</p>

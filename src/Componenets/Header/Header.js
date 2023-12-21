@@ -6,11 +6,9 @@ import RegisterModal from '../shared/RegisterModal';
 
 
 const Header = () => {
-    const [show, setShow] = useState(false);
-    const [modalShow, setModalShow] = React.useState(false);
+    const [modalShow, setModalShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+
     return (
         <header className='container py-4'>
             <div className="d-md-flex d-none d-sm-none justify-content-between">
