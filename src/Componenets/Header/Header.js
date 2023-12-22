@@ -16,7 +16,7 @@ const Header = () => {
                     <Link to="/"><img src="img/logo.png" alt="" /></Link>
                 </div>
 
-                <form>
+                <form className='d-none d-sm-none d-md-none d-lg-block'>
 
                     <div className='d-flex align-items-center rounded-5 px-3 border'>
                         <AiOutlineSearch className='fs-4'></AiOutlineSearch> <input placeholder='Search for your favorite groups in ATG' type="text" className="form-control search-input border-0 rounded-5" id="exampleInputPassword1" />

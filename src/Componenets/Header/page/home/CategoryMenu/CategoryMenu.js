@@ -18,66 +18,8 @@ const CategoryMenu = () => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    useEffect(() => {
-        fetch('https://atg-globe-server.vercel.app/posts')
-            .then(res => res.json())
-            .then(data => {
-                setPosts(data);
-                setAllPosts(data?.length)
-            })
-            .catch(err => console.log(err.message))
-    }, [user?.email, reload])
-    const handlePost = (e) => {
-        e.preventDefault()
-        if (!user) {
-            return toast.error("Please login first to post something")
-        }
-        if (!e.target.postText.value) {
-            return toast.error("Please write something")
-        }
 
 
-        const postData = e.target.postText.value;
-        const postedTime = new Date().getTime();
-        const userName = user?.displayName;
-        const userMail = user?.email;
-        const like = [];
-        const allDataInfo = { postData, postedTime, userName, userMail, like };
-        fetch('https://atg-globe-server.vercel.app/posts', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(allDataInfo)
-        })
-            .then(res => res.json())
-            .then(data => {
-                setReload(!reload);;
-                toast.success('Your post has been shared successfully')
-                e.target.reset()
-            })
-            .catch(err => console.log(err.message))
-
-    }
-    const handleUpdate = (e) => {
-        e.preventDefault()
-        handleClose();
-        const editedPost = e.target.editpostText.value;
-        fetch(`https://atg-globe-server.vercel.app/edit-post/${editPost?._id}`, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify({ editedPost })
-        })
-            .then(res => res.json())
-            .then(data => {
-                setReload(!reload)
-                toast.success("Post updated");
-
-            })
-            .catch(err => console.log(err.message))
-    }
     return (
         <section>
 
