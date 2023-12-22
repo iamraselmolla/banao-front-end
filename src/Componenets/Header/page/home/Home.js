@@ -25,7 +25,7 @@ const Home = () => {
                         </div>
 
                         <div className="post-part">
-                            <div className=' d-none d-sm-none d-md-block'>
+                            <div className=' d-none d-sm-none d-md-block d-lg-block'>
                                 <button className="px-3 fw-bolder py-2 rounded border-0" style={{ background: 'rgb(237, 238, 240)' }}>Write a Post <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="none" d="M0 0h24v24H0z"></path><path d="M7 10l5 5 5-5z"></path></svg>
                                 </button>
@@ -36,11 +36,11 @@ const Home = () => {
 
                         </div>
                     </div>
-                    <div className="d-block d-sm-block d-md-none d-flex justify-content-between align-items-center ">
+                    <div className="d-sm-flex   d-md-none d-lg-none d-flex justify-content-between align-items-center ">
 
-                        <div>
-                            <div className="text-decoration-none px-2 fw-bold text-black text-light ">All Posts (32)</div>
-                        </div>
+
+                        <div className="text-decoration-none px-2 fw-bold text-black text-light ">All Posts (32)</div>
+
                         <div>
                             <select className="me-3 bg-light  fw-bolder border-0 px-2 py-2 fw-bold" name="" id=""><option value="">Filter: All</option><option value="">Article</option><option value="">Education</option><option value="">MeetUp</option><option value="">Jobs</option></select>
                         </div>
